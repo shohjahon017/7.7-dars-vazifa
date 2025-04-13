@@ -1,15 +1,10 @@
-import React from "react";
 import MainLayout from "./layouts/MainLayout";
-import AddCart from "./components/AddCard";
-import Cart from "./components/Cart";
-
+import Home from "./pages/Home";
 function App() {
   return (
     <div>
-      {" "}
       <MainLayout>
-        <AddCart></AddCart>
-        <Cart></Cart>
+        <Home></Home>
       </MainLayout>
     </div>
   );

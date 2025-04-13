@@ -1,4 +1,3 @@
-import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 function Language() {
@@ -19,6 +18,7 @@ function Language() {
         <option value="en">English</option>
         <option value="uz">O'zbekcha</option>
         <option value="ru">Русский</option>
+        <option value="tj">Тоҷикӣ</option>
       </select>
     </div>
   );

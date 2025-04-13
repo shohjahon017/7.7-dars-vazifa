@@ -1,74 +1,144 @@
-import React from "react";
-import { useSelector } from "react-redux";
-import Language from "../components/Language";
-import Theme from "../components/Theme";
+import { useSelector, useDispatch } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
+import { FaSun, FaMoon } from "react-icons/fa";
+import { useState } from "react";
 
 function MainLayout({ children }) {
   const theme = useSelector((state) => state.theme);
   const language = useSelector((state) => state.language);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  function handleClick() {
+    navigate("/");
+  }
+
+  const toggleTheme = () => {
+    dispatch({
+      type: "SET_THEME",
+      payload: theme === "light" ? "dark" : "light",
+    });
+  };
+
+  const changeLanguage = (lang) => {
+    dispatch({ type: "SET_LANGUAGE", payload: lang });
+    setDropdownOpen(false);
+  };
 
   const translations = {
     en: {
-      welcome: "Welcome",
-      templates: "Templates",
-      features: "Features",
-      pricing: "Pricing",
-      resources: "Resources",
-      startTrial: "Start Free Trial",
+      home: "Home",
+      about: "About School",
+      contact: "Contact",
     },
     uz: {
-      welcome: "Xush kelibsiz",
-      templates: "Shablonlar",
-      features: "Xususiyatlar",
-      pricing: "Narxlar",
-      resources: "Resurslar",
-      startTrial: "Bepul sinovdan o'ting",
+      home: "Asosiy",
+      about: "Maktab Haqida",
+      contact: "Aloqa",
     },
     ru: {
-      welcome: "Добро пожаловать",
-      templates: "Шаблоны",
-      features: "Особенности",
-      pricing: "Цены",
-      resources: "Ресурсы",
-      startTrial: "Начать бесплатный пробный период",
+      home: "Главная",
+      about: "О школе",
+      contact: "Контакт",
     },
+    tj: {
+      home: "Асосий",
+      about: "Дар бораи мактаб",
+      contact: "Контакт",
+    },
+  };
+
+  const languageMap = {
+    uz: { label: "Uzbek", icon: "uzb" },
+    ru: { label: "Rus", icon: "rus" },
+    en: { label: "English", icon: "usa" },
+    tj: { label: "Тоҷикӣ", icon: "tjk" },
   };
 
   return (
     <div
-      className={`min-h-screen w-full items-center ${
-        theme === "light" ? "light-mode" : "dark-mode"
+      className={`min-h-screen w-full flex flex-col items-center  ${
+        theme === "light" ? "bg-white text-black" : "bg-gray-900 text-white"
       }`}
     >
-      <header className="bg-white shadow-md p-4 rounded-lg px-20 mb-6 flex justify-between items-center">
-        <h1 className="text-3xl font-bold">{translations[language].welcome}</h1>
-        <div className="flex space-x-4">
-          <div className="flex items-center gap-10 mr-80">
-            <a href="#" className="text-gray-800 hover:text-blue-500">
-              {translations[language].templates}
-            </a>
-            <a href="#" className="text-gray-800 hover:text-blue-500">
-              {translations[language].features}
-            </a>
-            <a href="#" className="text-gray-800 hover:text-blue-500">
-              {translations[language].pricing}
-            </a>
-            <a href="#" className="text-gray-800 hover:text-blue-500">
-              {translations[language].resources}
-            </a>
+      <nav className="bg-slate-500 p-4 shadow-lg w-full fixed">
+        <div className="container mx-auto flex justify-between items-center px-10">
+          <div className="flex items-center space-x-6 pl-10">
+            <img
+              onClick={handleClick}
+              src="/public/school.png"
+              alt=""
+              className="w-16 h-10 cursor-pointer"
+            />
+            <div className="pl-[300px]">
+              {" "}
+              <Link
+                className="text-white hover:bg-slate-600 px-4 py-2 rounded-lg transition"
+                to="/"
+              >
+                {translations[language].home}
+              </Link>
+              <Link
+                className="text-white hover:bg-slate-600 px-4 py-2 rounded-lg transition"
+                to="/about"
+              >
+                {translations[language].about}
+              </Link>
+              <Link
+                className="text-white hover:bg-slate-600 px-4 py-2 rounded transition"
+                to="/contact"
+              >
+                {translations[language].contact}
+              </Link>
+            </div>{" "}
           </div>
-          <div className="flex gap-2">
-            <Language />
-            <Theme />
-          </div>
-          <div>
-            <button className="px-3 py-2 border border-blue-600 rounded-2xl bg-blue-500 text-white hover:bg-blue-600 transition duration-200">
-              {translations[language].startTrial}
-            </button>
+
+          <div className="flex items-center space-x-6">
+            <div className="relative">
+              <button
+                onClick={() => setDropdownOpen(!isDropdownOpen)}
+                className="flex items-center bg-slate-500 text-white rounded px-4 py-1 border"
+              >
+                <img
+                  src={`/${languageMap[language].icon}.svg`}
+                  alt={language}
+                  className="h-5 w-5 mr-2"
+                />
+                {languageMap[language].label}
+              </button>
+              {isDropdownOpen && (
+                <div className="absolute mt-1 w-[120px] bg-white text-black shadow-lg rounded z-10">
+                  {Object.entries(languageMap).map(([key, { label, icon }]) => (
+                    <button
+                      key={key}
+                      onClick={() => changeLanguage(key)}
+                      className="flex items-center w-full px-4 py-2 hover:bg-gray-200"
+                    >
+                      <img
+                        src={`/${icon}.svg`}
+                        alt={label}
+                        className="h-5 w-5 mr-2"
+                      />
+                      {label}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <div onClick={toggleTheme} className="cursor-pointer pr-20">
+              {theme === "light" ? (
+                <FaMoon className="text-white" />
+              ) : (
+                <FaSun className="text-white" />
+              )}
+            </div>
           </div>
         </div>
-      </header>
-      <main>{children}</main>
+      </nav>
+
+      <main className="flex-grow p-4 w-full">{children}</main>
     </div>
   );
 }
