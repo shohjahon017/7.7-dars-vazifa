@@ -58,7 +58,7 @@ function About() {
           Har bir o‘quvchining qiziqishini aniqlab, uni rivojlantirishga yordam
           berish
         </li>
-        <li>Yuqori malakali ustozlar orqali sifatli ta'lim berish</li>
+        <li>Yuqori malakali ustozlar orqali sifatli ta`lim berish</li>
         <li>Zamonaviy texnologiyalar va metodikalarni qo‘llash</li>
         <li>
           Ota-onalar bilan hamkorlikda farzand tarbiyasiga e’tibor qaratish
