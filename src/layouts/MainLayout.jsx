@@ -220,7 +220,6 @@ function MainLayout({ children }) {
             />
           </div>
 
-          {/* Desktop Navigation - Centered Links */}
           <div className="lg:flex hidden justify-center space-x-6">
             <Link
               className="text-white hover:bg-slate-600 px-4 py-2 rounded-lg transition"
@@ -283,7 +282,6 @@ function MainLayout({ children }) {
               )}
             </div>
 
-            {/* Mobile Hamburger Menu */}
             <button
               onClick={() => setMenuOpen(!isMenuOpen)}
               className="lg:hidden text-white"
@@ -293,7 +291,6 @@ function MainLayout({ children }) {
           </div>
         </div>
 
-        {/* Mobile Menu Dropdown */}
         {isMenuOpen && (
           <div className="lg:hidden absolute top-16 left-0 w-full bg-slate-500 text-white">
             <div className="flex flex-col items-center py-4 space-y-4">
