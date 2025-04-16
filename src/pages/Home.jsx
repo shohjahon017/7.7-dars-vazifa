@@ -100,7 +100,7 @@ function Home() {
                 icon: <FaMedal className="text-4xl mb-2 text-blue-700" />,
               },
               {
-                number: "2008",
+                number: "2009",
                 label: "Tashkil topgan yil",
                 icon: <FaSchool className="text-4xl mb-2  text-blue-700" />,
               },

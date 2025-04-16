@@ -258,14 +258,12 @@ function MainLayout({ children }) {
 
   return (
     <div
-      className={`min-h-screen w-full flex flex-col transition-colors duration-300 ${
+      className={`min-h-screen w-full flex   flex-col transition-colors duration-300 ${
         theme === "light" ? "bg-white text-black" : "bg-gray-900 text-white"
       }`}
     >
-      {/* Navbar */}
-      <nav className="bg-slate-500 p-4 shadow-lg w-full fixed z-50">
+      <nav className="bg-slate-500 p-4 px-32   shadow-lg w-full fixed z-50">
         <div className="container mx-auto flex justify-between items-center px-4">
-          {/* Logo */}
           <img
             onClick={handleClick}
             src="/school.png"
@@ -273,7 +271,6 @@ function MainLayout({ children }) {
             className="w-16 h-10 cursor-pointer"
           />
 
-          {/* Desktop Nav */}
           <div className="hidden lg:flex space-x-6">
             <Link
               className="text-white hover:bg-slate-600 px-4 py-2 rounded-lg transition"
@@ -295,9 +292,7 @@ function MainLayout({ children }) {
             </Link>
           </div>
 
-          {/* Controls */}
           <div className="flex items-center space-x-4">
-            {/* Desktop Language */}
             <div className="relative hidden lg:block">
               <button
                 onClick={() => setDropdownOpen(!isDropdownOpen)}
@@ -330,12 +325,10 @@ function MainLayout({ children }) {
               )}
             </div>
 
-            {/* Theme Toggle */}
             <div onClick={toggleTheme} className="cursor-pointer text-white">
               {theme === "light" ? <FaMoon /> : <FaSun />}
             </div>
 
-            {/* Menu Icon (Mobile) */}
             <button
               onClick={() => setMenuOpen(!isMenuOpen)}
               className="lg:hidden text-white"
@@ -345,7 +338,6 @@ function MainLayout({ children }) {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="lg:hidden bg-slate-600 mt-2 p-4 space-y-4 text-white rounded-b">
             <Link
@@ -369,8 +361,6 @@ function MainLayout({ children }) {
             >
               {translations[language].contact}
             </Link>
-
-            {/* Mobile Language Dropdown */}
             <div>
               <button
                 onClick={() => setMobileLangOpen(!isMobileLangOpen)}
@@ -406,7 +396,6 @@ function MainLayout({ children }) {
         )}
       </nav>
 
-      {/* Content below navbar */}
       <div className="pt-16">{children}</div>
     </div>
   );

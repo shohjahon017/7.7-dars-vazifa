@@ -1,0 +1,25 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "name": "Farhod Jurayev",
+      "subject": "Maktab direktori",
+      "img": " ",
+      "bio": "Farhod Jurayev 10 yildan ortiq tajribaga ega matematik o'qituvchi."
+    },
+    {
+      "id": 2,
+      "name": "Murodil Qosimov",
+      "subject": "O'quv ishlari bo'yicha direktor o'rinbosari",
+      "img": "/murodil.jpg",
+      "bio": "Murodil Qosimov ta'lim tizimi bo'yicha uzoq yillik tajribaga ega rahbar."
+    },
+    {
+      "id": 3,
+      "name": "Shohruz Jalilov",
+      "subject": "Ma'naviy ma'rifiy ishlar bo'yicha direktor o'rinbosari",
+      "img": " ",
+      "bio": "Shohruz Jalilov maktabda ma'naviyat va tarbiya ishlari bo'yicha mutaxassis."
+    }
+  ]
+}
