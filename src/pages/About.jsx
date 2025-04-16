@@ -7,7 +7,7 @@ function About() {
     en: {
       title: "Our School",
       paragraph1:
-        "1-IDUM is a source of knowledge, development, and achievements. Our school has over 1000 students and more than 60 qualified teachers. Established in 1985, our school is equipped with modern classrooms, a library, gym, and computer labs.",
+        "1-IDUM is a source of knowledge, development, and achievements. Our school has over 150 students and more than 30 qualified teachers. Established in 2008, our school is equipped with modern classrooms, a library, gym, and computer labs.",
       paragraph2:
         "We promote personal development, independent thinking, and social activity among students. Every year, our students win in science olympiads, sports competitions, and various contests.",
       paragraph3:
@@ -23,7 +23,7 @@ function About() {
     uz: {
       title: "Bizning Maktab",
       paragraph1:
-        "1-IDUM – bu bilim, rivojlanish va yutuqlarning manbai. Bizning maktabimizda 1000 dan ortiq o‘quvchi va 60 nafardan ortiq malakali o‘qituvchilar tahsil va faoliyat yuritadi. Maktabimiz 1985-yilda tashkil topgan va hozirda zamonaviy texnologiyalar bilan jihozlangan sinf xonalariga, kutubxona, sport zali, informatika laboratoriyalariga ega.",
+        "1-IDUM – bu bilim, rivojlanish va yutuqlarning manbai. Bizning maktabimizda 150 dan ortiq o‘quvchi va 30 nafardan ortiq malakali o‘qituvchilar tahsil va faoliyat yuritadi. Maktabimiz 2008-yilda tashkil topgan va hozirda zamonaviy texnologiyalar bilan jihozlangan sinf xonalariga, kutubxona, sport zali, informatika laboratoriyalariga ega.",
       paragraph2:
         "Maktabimizda o‘quvchilarning shaxsiy rivojlanishi, mustaqil fikrlashi va ijtimoiy faolligi targ‘ib qilinadi. Har yili o‘quvchilarimiz fan olimpiadalarida, sport musobaqalarida va turli tanlovlarda g‘olib bo‘lib kelmoqda.",
       paragraph3:
@@ -39,7 +39,7 @@ function About() {
     ru: {
       title: "Наша Школа",
       paragraph1:
-        "1-IDUM – это источник знаний, развития и достижений. В нашей школе обучаются более 1000 учеников и работают свыше 60 квалифицированных учителей. Основанная в 1985 году, школа оснащена современными классами, библиотекой, спортивным залом и компьютерными лабораториями.",
+        "1-IDUM – это источник знаний, развития и достижений. В нашей школе обучаются более 150 учеников и работают свыше 30 квалифицированных учителей. Основанная в 2008 году, школа оснащена современными классами, библиотекой, спортивным залом и компьютерными лабораториями.",
       paragraph2:
         "Мы поощряем личностное развитие, независимое мышление и социальную активность учащихся. Каждый год наши ученики становятся победителями олимпиад, спортивных соревнований и различных конкурсов.",
       paragraph3:
@@ -55,7 +55,7 @@ function About() {
     tj: {
       title: "Мактаби Мо",
       paragraph1:
-        "1-IDUM – манбаи дониш, рушд ва дастовардҳост. Дар мактаби мо зиёда аз 1000 хонанда ва зиёда аз 60 омӯзгори соҳибихтисос таълим мегиранд. Мактаб соли 1985 таъсис ёфта, бо синфхонаҳои муосир, китобхона, толори варзиш ва лабораторияҳои компютерӣ муҷаҳҳаз мебошад.",
+        "1-IDUM – манбаи дониш, рушд ва дастовардҳост. Дар мактаби мо зиёда аз 150 хонанда ва зиёда аз 30 омӯзгори соҳибихтисос таълим мегиранд. Мактаб соли 2008 таъсис ёфта, бо синфхонаҳои муосир, китобхона, толори варзиш ва лабораторияҳои компютерӣ муҷаҳҳаз мебошад.",
       paragraph2:
         "Дар мактаби мо инкишофи шахсӣ, фикрронии мустақил ва фаъолияти иҷтимоии хонандагон тарғиб карда мешавад. Ҳар сол хонандагони мо дар олимпиадаҳо, мусобиқаҳои варзишӣ ва озмунҳо ғолиб мешаванд.",
       paragraph3:

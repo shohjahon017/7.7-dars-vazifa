@@ -5,7 +5,7 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 function App() {
   return (
-    <div>
+    <div className="font-thin">
       <Routes>
         <Route
           path="/"
