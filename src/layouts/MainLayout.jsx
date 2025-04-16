@@ -212,7 +212,7 @@
 // export default MainLayout;
 import { useSelector, useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import { FaSun, FaMoon, FaBars } from "react-icons/fa";
+import { FaSun, FaMoon, FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 
 function MainLayout({ children }) {
@@ -220,12 +220,14 @@ function MainLayout({ children }) {
   const language = useSelector((state) => state.language);
   const dispatch = useDispatch();
   const navigate = useNavigate();
+
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const [isMobileLangOpen, setMobileLangOpen] = useState(false);
 
-  function handleClick() {
+  const handleClick = () => {
     navigate("/");
-  }
+  };
 
   const toggleTheme = () => {
     dispatch({
@@ -237,6 +239,7 @@ function MainLayout({ children }) {
   const changeLanguage = (lang) => {
     dispatch({ type: "SET_LANGUAGE", payload: lang });
     setDropdownOpen(false);
+    setMobileLangOpen(false);
   };
 
   const translations = {
@@ -255,24 +258,23 @@ function MainLayout({ children }) {
 
   return (
     <div
-      className={`min-h-screen w-full flex flex-col ${
+      className={`min-h-screen w-full flex flex-col transition-colors duration-300 ${
         theme === "light" ? "bg-white text-black" : "bg-gray-900 text-white"
       }`}
     >
       {/* Navbar */}
       <nav className="bg-slate-500 p-4 shadow-lg w-full fixed z-50">
-        <div className="container mx-auto flex justify-between items-center px-6 lg:px-10">
-          <div className="flex items-center space-x-6 pl-2 lg:pl-10">
-            <img
-              onClick={handleClick}
-              src="/school.png"
-              alt="logo"
-              className="w-16 h-10 cursor-pointer"
-            />
-          </div>
+        <div className="container mx-auto flex justify-between items-center px-4">
+          {/* Logo */}
+          <img
+            onClick={handleClick}
+            src="/school.png"
+            alt="logo"
+            className="w-16 h-10 cursor-pointer"
+          />
 
-          {/* Desktop nav links */}
-          <div className="lg:flex hidden justify-center space-x-6">
+          {/* Desktop Nav */}
+          <div className="hidden lg:flex space-x-6">
             <Link
               className="text-white hover:bg-slate-600 px-4 py-2 rounded-lg transition"
               to="/"
@@ -293,9 +295,9 @@ function MainLayout({ children }) {
             </Link>
           </div>
 
-          {/* Right side controls */}
+          {/* Controls */}
           <div className="flex items-center space-x-4">
-            {/* Language dropdown */}
+            {/* Desktop Language */}
             <div className="relative hidden lg:block">
               <button
                 onClick={() => setDropdownOpen(!isDropdownOpen)}
@@ -328,28 +330,24 @@ function MainLayout({ children }) {
               )}
             </div>
 
-            {/* Theme toggle */}
-            <div onClick={toggleTheme} className="cursor-pointer">
-              {theme === "light" ? (
-                <FaMoon className="text-white" />
-              ) : (
-                <FaSun className="text-white" />
-              )}
+            {/* Theme Toggle */}
+            <div onClick={toggleTheme} className="cursor-pointer text-white">
+              {theme === "light" ? <FaMoon /> : <FaSun />}
             </div>
 
-            {/* Mobile menu button */}
+            {/* Menu Icon (Mobile) */}
             <button
               onClick={() => setMenuOpen(!isMenuOpen)}
               className="lg:hidden text-white"
             >
-              <FaBars />
+              {isMenuOpen ? <FaTimes /> : <FaBars />}
             </button>
           </div>
         </div>
 
-        {/* Mobile menu content */}
+        {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden bg-slate-600 mt-2 p-4 space-y-4 text-white">
+          <div className="lg:hidden bg-slate-600 mt-2 p-4 space-y-4 text-white rounded-b">
             <Link
               to="/"
               onClick={() => setMenuOpen(false)}
@@ -372,29 +370,43 @@ function MainLayout({ children }) {
               {translations[language].contact}
             </Link>
 
-            <div className="mt-2">
-              <p className="text-sm mb-1">Tilni tanlang:</p>
-              <div className="space-y-2">
-                {Object.entries(languageMap).map(([key, { label, icon }]) => (
-                  <button
-                    key={key}
-                    onClick={() => changeLanguage(key)}
-                    className="flex items-center w-full px-2 py-1 hover:bg-slate-700 rounded"
-                  >
-                    <img
-                      src={`/${icon}.svg`}
-                      alt={label}
-                      className="h-4 w-4 mr-2"
-                    />
-                    {label}
-                  </button>
-                ))}
-              </div>
+            {/* Mobile Language Dropdown */}
+            <div>
+              <button
+                onClick={() => setMobileLangOpen(!isMobileLangOpen)}
+                className="flex items-center w-full px-4 py-2 bg-slate-700 rounded"
+              >
+                <img
+                  src={`/${languageMap[language].icon}.svg`}
+                  alt={language}
+                  className="h-5 w-5 mr-2"
+                />
+                {languageMap[language].label}
+              </button>
+              {isMobileLangOpen && (
+                <div className="mt-2 space-y-2">
+                  {Object.entries(languageMap).map(([key, { label, icon }]) => (
+                    <button
+                      key={key}
+                      onClick={() => changeLanguage(key)}
+                      className="flex items-center w-full px-4 py-2 hover:bg-slate-500 rounded"
+                    >
+                      <img
+                        src={`/${icon}.svg`}
+                        alt={label}
+                        className="h-5 w-5 mr-2"
+                      />
+                      {label}
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         )}
       </nav>
 
+      {/* Content below navbar */}
       <div className="pt-16">{children}</div>
     </div>
   );
