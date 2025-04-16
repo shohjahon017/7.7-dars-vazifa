@@ -35,18 +35,18 @@ function App() {
           }
         />
         <Route
+          path="/teachers"
+          element={
+            <MainLayout>
+              <TeacherList />
+            </MainLayout>
+          }
+        />
+        <Route
           path="/teachers/:teacherId"
           element={
             <MainLayout>
               <TeacherDetails />
-            </MainLayout>
-          }
-        />{" "}
-        <Route
-          path="/"
-          element={
-            <MainLayout>
-              <TeacherList />
             </MainLayout>
           }
         />

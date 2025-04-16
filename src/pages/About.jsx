@@ -200,16 +200,21 @@ import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import Teachers from "../components/Teachers";
 
 function About() {
   const language = useSelector((state) => state.language);
   const navigate = useNavigate();
   const [teachers, setTeachers] = useState([]);
 
-  // O'qituvchilarni API orqali olish
   useEffect(() => {
     axios
-      .get("http://localhost:3000/teachers") // Bu yerga o'zingizning API manzilingizni qo'yishingiz mumkin
+      .get("http://localhost:3000/teachers", {
+        headers: {
+          "Cache-Control": "no-cache",
+        },
+      })
+
       .then((res) => {
         setTeachers(res.data);
       })
@@ -365,6 +370,7 @@ function About() {
         {t.library}
       </h2>
       <p className="text-gray-700 mb-6">{t.libraryDesc}</p>
+      <Teachers teachers={teachers}></Teachers>
     </div>
   );
 }

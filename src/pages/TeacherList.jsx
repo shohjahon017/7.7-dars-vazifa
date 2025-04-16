@@ -1,7 +1,7 @@
 // src/components/TeacherList.js
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import api from "../axios"; // to'g'ri api importi
+import api from "../axios";
 
 function TeacherList() {
   const [teachers, setTeachers] = useState([]);

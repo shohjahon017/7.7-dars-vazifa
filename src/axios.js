@@ -1,8 +1,7 @@
-// src/axios.js
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:3000", // API manzilini to'g'ri kiriting
+  baseURL: "http://localhost:3000",
   headers: {
     "Content-Type": "application/json",
   },

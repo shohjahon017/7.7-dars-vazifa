@@ -1,25 +1,210 @@
 {
-  "teachers": [
-    {
-      "id": 1,
-      "name": "Farhod Jurayev",
-      "subject": "Maktab direktori",
-      "img": " ",
-      "bio": "Farhod Jurayev 10 yildan ortiq tajribaga ega matematik o'qituvchi."
-    },
-    {
-      "id": 2,
-      "name": "Murodil Qosimov",
-      "subject": "O'quv ishlari bo'yicha direktor o'rinbosari",
-      "img": "/murodil.jpg",
-      "bio": "Murodil Qosimov ta'lim tizimi bo'yicha uzoq yillik tajribaga ega rahbar."
-    },
-    {
-      "id": 3,
-      "name": "Shohruz Jalilov",
-      "subject": "Ma'naviy ma'rifiy ishlar bo'yicha direktor o'rinbosari",
-      "img": " ",
-      "bio": "Shohruz Jalilov maktabda ma'naviyat va tarbiya ishlari bo'yicha mutaxassis."
-    }
-  ]
+  "uz": {
+    "teachers": [
+      {
+        "id": 1,
+        "name": "Farhod Jurayev",
+        "subject": "Maktab direktori",
+        "bio": "Farhod Jurayev 10 yildan ortiq tajribaga ega matematik o'qituvchi. U maktab boshqaruvida yuqori malakaga ega va o‘quvchilarning muvaffaqiyati uchun doimiy ishlaydi."
+      },
+      {
+        "id": 2,
+        "name": "Murodil Qosimov",
+        "subject": "O'quv ishlari bo'yicha direktor o'rinbosari",
+        "bio": "Murodil Qosimov ta'lim tizimi bo'yicha uzoq yillik tajribaga ega rahbar. U o‘quv jarayonini samarali tashkil qilish va darslar sifatini oshirishga katta e'tibor beradi."
+      },
+      {
+        "id": 3,
+        "name": "Shohruz Jalilov",
+        "subject": "Ma'naviy-ma'rifiy ishlar bo'yicha direktor o'rinbosari",
+        "bio": "Shohruz Jalilov maktabda ma'naviyat va tarbiya ishlari bo'yicha mutaxassis. U yosh avlodga milliy qadriyatlarni singdirish va ijtimoiy loyihalarni rivojlantirish ustida ishlaydi."
+      },
+      {
+        "id": 4,
+        "name": "Azimbekov Musobek",
+        "subject": "Psixolog",
+        "bio": "Musobek Azimbekov – tajribali psixolog bo‘lib, o‘quvchilar va o‘qituvchilarning ruhiy salomatligini mustahkamlashda faol ishtirok etadi."
+      },
+      {
+        "id": 5,
+        "name": "Luftiloev Sanjarbek",
+        "subject": "Adminstrator",
+        "bio": "Sanjarbek Luftiloev maktabda ma’muriy ishlarni samarali tashkil qilishga mas’ul bo‘lib, texnik va tashkiliy jarayonlarni nazorat qiladi."
+      },
+      {
+        "id": 6,
+        "name": "Pirmatov Mahmanazar",
+        "subject": "CHQBT o'qituvchisi",
+        "bio": "Mahmanazar Pirmatov chaqiriqqacha harbiy tayyorgarlik bo‘yicha bilimli o‘qituvchi. U o‘quvchilarni vatanparvarlik ruhida tarbiyalaydi."
+      },
+      {
+        "id": 7,
+        "name": "Sotiev Hayotjon",
+        "subject": "Ingliz tili o'qituvchisi",
+        "bio": "Hayotjon Sotiev ingliz tilini chuqur o‘rgatishga bag‘ishlangan ko‘p yillik tajribaga ega. U zamonaviy dars uslublaridan foydalanadi."
+      },
+      {
+        "id": 8,
+        "name": "Bobosharipov Parviz",
+        "subject": "Matematika va Informatika o'qituvchisi",
+        "bio": "Parviz Bobosharipov matematika va informatika fanlarini mukammal o‘qituvchi bo‘lib, zamonaviy texnologiyalarni dars jarayoniga tatbiq etadi."
+      }
+    ]
+  },
+  "ru": {
+    "teachers": [
+      {
+        "id": 1,
+        "name": "Фарход Жураев",
+        "subject": "Директор школы",
+        "bio": "Фарход Жураев — опытный учитель математики с более чем 10-летним стажем. Он обладает высокой квалификацией в управлении школой и постоянно работает над успехами учеников."
+      },
+      {
+        "id": 2,
+        "name": "Муродил Касымов",
+        "subject": "Заместитель директора по учебной части",
+        "bio": "Муродил Касымов — руководитель с многолетним опытом в сфере образования. Он придает большое значение организации учебного процесса и повышению качества занятий."
+      },
+      {
+        "id": 3,
+        "name": "Шохруз Джалилов",
+        "subject": "Заместитель директора по духовно-просветительской работе",
+        "bio": "Шохруз Джалилов — специалист по духовному воспитанию и просвещению. Работает над развитием социальных проектов и приобщением молодежи к национальным ценностям."
+      },
+      {
+        "id": 4,
+        "name": "Азимбеков Мусобек",
+        "subject": "Психолог",
+        "bio": "Мусобек Азимбеков — опытный психолог, активно работает над укреплением психологического здоровья учеников и преподавателей."
+      },
+      {
+        "id": 5,
+        "name": "Санджарбек Лутфилоев",
+        "subject": "Администратор",
+        "bio": "Санджарбек Лутфилоев отвечает за эффективную организацию административных дел школы и контролирует технические и организационные процессы."
+      },
+      {
+        "id": 6,
+        "name": "Махманазар Пирматов",
+        "subject": "Преподаватель довоенной подготовки",
+        "bio": "Махманазар Пирматов — знающий преподаватель по довоенной подготовке, воспитывает учеников в духе патриотизма."
+      },
+      {
+        "id": 7,
+        "name": "Хаётжон Сотиев",
+        "subject": "Преподаватель английского языка",
+        "bio": "Хаётжон Сотиев имеет многолетний опыт преподавания английского языка и использует современные методы обучения."
+      },
+      {
+        "id": 8,
+        "name": "Парвиз Бобошарипов",
+        "subject": "Преподаватель математики и информатики",
+        "bio": "Парвиз Бобошарипов — квалифицированный преподаватель математики и информатики, применяет современные технологии в учебном процессе."
+      }
+    ]
+  },
+  "en": {
+    "teachers": [
+      {
+        "id": 1,
+        "name": "Farhod Jurayev",
+        "subject": "School Principal",
+        "bio": "Farhod Jurayev is an experienced mathematics teacher with over 10 years of expertise. He is highly skilled in school management and works tirelessly for student success."
+      },
+      {
+        "id": 2,
+        "name": "Murodil Qosimov",
+        "subject": "Deputy Principal for Academic Affairs",
+        "bio": "Murodil Qosimov is a seasoned leader in the education sector. He focuses on organizing the learning process efficiently and improving lesson quality."
+      },
+      {
+        "id": 3,
+        "name": "Shohruz Jalilov",
+        "subject": "Deputy Principal for Moral and Educational Affairs",
+        "bio": "Shohruz Jalilov is a specialist in moral and spiritual education. He works on instilling national values in youth and developing social projects."
+      },
+      {
+        "id": 4,
+        "name": "Azimbekov Musobek",
+        "subject": "Psychologist",
+        "bio": "Musobek Azimbekov is an experienced psychologist actively involved in improving the mental well-being of students and staff."
+      },
+      {
+        "id": 5,
+        "name": "Luftiloev Sanjarbek",
+        "subject": "Administrator",
+        "bio": "Sanjarbek Luftiloev is responsible for organizing administrative work at school and overseeing technical and organizational processes."
+      },
+      {
+        "id": 6,
+        "name": "Pirmatov Mahmanazar",
+        "subject": "Pre-military Training Teacher",
+        "bio": "Mahmanazar Pirmatov is a knowledgeable instructor in pre-military training, educating students in the spirit of patriotism."
+      },
+      {
+        "id": 7,
+        "name": "Sotiev Hayotjon",
+        "subject": "English Teacher",
+        "bio": "Hayotjon Sotiev has many years of experience in teaching English and utilizes modern teaching methods."
+      },
+      {
+        "id": 8,
+        "name": "Bobosharipov Parviz",
+        "subject": "Math and Computer Science Teacher",
+        "bio": "Parviz Bobosharipov is a qualified teacher of mathematics and computer science who integrates modern technologies into his lessons."
+      }
+    ]
+  },
+  "tj": {
+    "teachers": [
+      {
+        "id": 1,
+        "name": "Фарҳод Ҷураев",
+        "subject": "Директори мактаб",
+        "bio": "Фарҳод Ҷураев омӯзгори пуртаҷрибаи математика буда, зиёда аз 10 сол таҷриба дорад. Ӯ дорои малакаи баланди идораи мактаб мебошад ва ҳамеша барои муваффақияти хонандагон кӯшиш мекунад."
+      },
+      {
+        "id": 2,
+        "name": "Муродил Қосимов",
+        "subject": "Муовини директор оид ба корҳои таълимӣ",
+        "bio": "Муродил Қосимов раҳбари дорои таҷрибаи бисёрсолаи соҳаи маориф мебошад. Ӯ ба ташкил ва баланд бардоштани сифати дарсҳо диққати зиёд медиҳад."
+      },
+      {
+        "id": 3,
+        "name": "Шоҳруз Ҷалилов",
+        "subject": "Муовини директор оид ба корҳои маънавӣ-маърифатӣ",
+        "bio": "Шоҳруз Ҷалилов мутахассиси корҳои маънавӣ ва тарбиявӣ буда, барои таълиму тарбияи арзишҳои миллӣ дар байни ҷавонон ва рушди лоиҳаҳои иҷтимоӣ кор мекунад."
+      },
+      {
+        "id": 4,
+        "name": "Азимбеков Мусобек",
+        "subject": "Психолог",
+        "bio": "Мусобек Азимбеков — психологи соҳибтаҷриба буда, барои беҳтар кардани саломатии равонии хонандагону омӯзгорон саҳми калон мегузорад."
+      },
+      {
+        "id": 5,
+        "name": "Луфтилоев Санҷарбек",
+        "subject": "Администратор",
+        "bio": "Санҷарбек Луфтилоев барои ташкил ва назорати самараноки корҳои маъмурии мактаб масъул аст."
+      },
+      {
+        "id": 6,
+        "name": "Пирматов Махманазар",
+        "subject": "Омӯзгори тайёрии ҳарбӣ",
+        "bio": "Махманазар Пирматов омӯзгори донои тайёрии ҳарбӣ мебошад, ки хонандагонро дар рӯҳияи ватандӯстӣ тарбия мекунад."
+      },
+      {
+        "id": 7,
+        "name": "Сотиев Ҳаётҷон",
+        "subject": "Омӯзгори забони англисӣ",
+        "bio": "Ҳаётҷон Сотиев дорои таҷрибаи бисёрсолаи таълими забони англисӣ мебошад ва усулҳои муосири дарсро истифода мебарад."
+      },
+      {
+        "id": 8,
+        "name": "Бобошарипов Парвиз",
+        "subject": "Омӯзгори математика ва информатика",
+        "bio": "Парвиз Бобошарипов омӯзгори соҳибихтисоси фанҳои математика ва информатика мебошад, ки технологияи муосирро дар раванди таълим истифода мебарад."
+      }
+    ]
+  }
 }
