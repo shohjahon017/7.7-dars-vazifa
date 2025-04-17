@@ -669,7 +669,7 @@ function About() {
             <img
               src={teacher.img}
               alt={teacher.name}
-              className="w-full h-64 object-cover"
+              className="w-full h-64 object-fill"
             />
             <div className="p-4">
               <h3 className="text-xl font-semibold text-blue-900">

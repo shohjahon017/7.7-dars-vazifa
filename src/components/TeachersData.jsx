@@ -51,7 +51,7 @@ const teachersData = {
       subject: "CHQBT o'qituvchisi",
       date: "30.07.1985",
       tel: "+998 99-359-13-90",
-      img: "path/to/image6.jpg",
+      img: "/pirmatov.png",
       bio: "Mahmanazar Pirmatov chaqiriqqacha harbiy tayyorgarlik bo‘yicha bilimli o‘qituvchi. U o‘quvchilarni vatanparvarlik ruhida tarbiyalaydi.",
     },
     {
@@ -60,7 +60,7 @@ const teachersData = {
       subject: "Ingliz tili o'qituvchisi",
       date: "18.04.1964",
       tel: "+998 99-649-10-43",
-      img: "path/to/image7.jpg",
+      img: "/sotiev.jpg",
       bio: "Hayotjon Sotiev ingliz tilini chuqur o‘rgatishga bag‘ishlangan ko‘p yillik tajribaga ega. U zamonaviy dars uslublaridan foydalanadi.",
     },
     {
@@ -103,7 +103,7 @@ const teachersData = {
     },
     {
       id: 4,
-      name: "Азимбеков Мусобек",
+      name: "Мусобек Азимбеков",
       subject: "Психолог",
       date: "04.03.1963",
       tel: "+998 99-602-71-28",
@@ -125,7 +125,7 @@ const teachersData = {
       subject: "Преподаватель довоенной подготовки",
       date: "30.07.1985",
       tel: "+998 99-359-13-90",
-      img: "path/to/image6.jpg",
+      img: "/pirmatov.png",
       bio: "Махманазар Пирматов — знающий преподаватель по довоенной подготовке, воспитывает учеников в духе патриотизма.",
     },
     {
@@ -134,7 +134,7 @@ const teachersData = {
       subject: "Преподаватель английского языка",
       date: "18.04.1964",
       tel: "+998 99-649-10-43",
-      img: "path/to/image7.jpg",
+      img: "/sotiev.jpg",
       bio: "Хаётжон Сотиев имеет многолетний опыт преподавания английского языка и использует современные методы обучения.",
     },
     {
@@ -199,7 +199,7 @@ const teachersData = {
       subject: "Pre-military Training Teacher",
       date: "30.07.1985",
       tel: "+998 99-359-13-90",
-      img: "path/to/image6.jpg",
+      img: "/pirmatov.png",
       bio: "Mahmanazar Pirmatov is a knowledgeable instructor in pre-military training, educating students in the spirit of patriotism.",
     },
     {
@@ -208,7 +208,7 @@ const teachersData = {
       subject: "English Teacher",
       date: "18.04.1964",
       tel: "+998 99-649-10-43",
-      img: "path/to/image7.jpg",
+      img: "/sotiev.jpg",
       bio: "Hayotjon Sotiev is an experienced English language teacher who employs modern teaching methods.",
     },
     {
@@ -225,7 +225,7 @@ const teachersData = {
     {
       id: 1,
       name: "Фарход Жураев",
-      subject: "Директор мактаб",
+      subject: "Директори мактаб",
       date: "20.09.1970",
       tel: "+998 99-616-44-56",
       img: "path/to/image1.jpg",
@@ -251,7 +251,7 @@ const teachersData = {
     },
     {
       id: 4,
-      name: "Азимбеков Мусобек",
+      name: "Мусобек Азимбеков",
       subject: "Психолог",
       date: "04.03.1963",
       tel: "+998 99-602-71-28",
@@ -269,11 +269,11 @@ const teachersData = {
     },
     {
       id: 6,
-      name: "Маҳмоназар Пирматов",
+      name: "Маҳманазар Пирматов",
       subject: "Мударриси омодагии ҳарбӣ",
       date: "30.07.1985",
       tel: "+998 99-359-13-90",
-      img: "path/to/image6.jpg",
+      img: "/pirmatov.png",
       bio: "Маҳмоназар Пирматов – омӯзгори огоҳии ҳарбӣ, ки шогирдонро дар руҳияи ватандорӣ тарбия мекунад.",
     },
     {
@@ -282,7 +282,7 @@ const teachersData = {
       subject: "Мударриси забони англисӣ",
       date: "18.04.1964",
       tel: "+998 99-649-10-43",
-      img: "path/to/image7.jpg",
+      img: "/sotiev.jpg",
       bio: "Хаётҷон Сотиев – омӯзгори бо таҷрибаи баланди забони англисӣ, ки усулҳои муосири таълимро истифода мебарад.",
     },
     {
