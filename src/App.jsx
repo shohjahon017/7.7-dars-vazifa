@@ -2,9 +2,8 @@ import { Route, Routes } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import TeacherList from "./pages/TeacherList";
 import Home from "./pages/Home";
-import TeacherDetails from "./pages/TeacherDetails";
+// import TeacherDetails from "./pages/TeacherDetails";
 
 function App() {
   return (
@@ -34,22 +33,15 @@ function App() {
             </MainLayout>
           }
         />
-        <Route
-          path="/teachers"
-          element={
-            <MainLayout>
-              <TeacherList />
-            </MainLayout>
-          }
-        />
-        <Route
-          path="/teachers/:teacherId"
+
+        {/* <Route
+          path="/teachers/:id"
           element={
             <MainLayout>
               <TeacherDetails />
             </MainLayout>
           }
-        />
+        /> */}
       </Routes>
     </div>
   );

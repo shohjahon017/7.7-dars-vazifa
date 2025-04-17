@@ -14,6 +14,9 @@ function Home() {
     e.preventDefault();
     navigate("/contact");
   }
+  function handleAbout() {
+    navigate("/about");
+  }
   return (
     <div
       className={`w-full min-h-screen ${
@@ -36,11 +39,14 @@ function Home() {
           <h2 className="text-4xl font-bold text-center text-blue-900 mb-12">
             Nega aynan 1-IDUM?
           </h2>
-          <div className="grid md:grid-cols-3 gap-10">
+          <div className="grid md:grid-cols-3 gap-10  ">
             {[
               {
                 icon: (
-                  <FaSchool className="text-blue-600 text-5xl mx-auto mb-4" />
+                  <FaSchool
+                    onClick={handleAbout}
+                    className="text-blue-600 text-5xl mx-auto mb-4"
+                  />
                 ),
                 title: "Zamonaviy Ta’lim",
                 desc: "Ilg‘or metodika va texnologiyalar bilan ta’lim jarayoni olib boriladi.",
@@ -62,7 +68,7 @@ function Home() {
             ].map((item, idx) => (
               <div
                 key={idx}
-                className="bg-gray-100 rounded-xl p-8 shadow-lg text-center hover:shadow-xl transition-all duration-300"
+                className="bg-gray-100 rounded-xl p-8 cursor-pointer shadow-lg text-center hover:shadow-xl transition-all duration-300"
               >
                 {item.icon}
                 <h3 className="text-xl font-semibold mb-3 text-blue-800">
