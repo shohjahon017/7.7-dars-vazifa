@@ -262,7 +262,7 @@ function MainLayout({ children }) {
         theme === "light" ? "bg-white text-black" : "bg-gray-900 text-white"
       }`}
     >
-      <nav className="bg-slate-500 p-4 px-32   shadow-lg w-full fixed z-50">
+      <nav className="bg-slate-500 p-4 px-20   shadow-lg w-full fixed z-50">
         <div className="container mx-auto flex justify-between items-center px-4">
           <img
             onClick={handleClick}
