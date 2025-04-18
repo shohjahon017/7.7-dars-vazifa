@@ -50,7 +50,7 @@ function MainLayout({ children }) {
         theme === "light" ? "bg-white text-black" : "bg-gray-900 text-white"
       }`}
     >
-      <nav className="bg-slate-500 p-4 px-8  shadow-lg w-full fixed z-50">
+      <nav className="   bg-blue-400  p-4 px-8  shadow-lg w-full fixed z-50">
         <div className="container mx-auto flex justify-between items-center px-4">
           <img
             onClick={handleClick}
@@ -61,19 +61,19 @@ function MainLayout({ children }) {
 
           <div className="hidden lg:flex space-x-6">
             <Link
-              className="text-white hover:bg-slate-600 px-4 py-2 rounded-lg transition"
+              className="text-white hover:bg-blue-500 px-4 py-2 rounded-lg transition"
               to="/"
             >
               {translations[language].home}
             </Link>
             <Link
-              className="text-white hover:bg-slate-600 px-4 py-2 rounded-lg transition"
+              className="text-white hover:bg-blue-500 px-4 py-2 rounded-lg transition"
               to="/about"
             >
               {translations[language].about}
             </Link>
             <Link
-              className="text-white hover:bg-slate-600 px-4 py-2 rounded-lg transition"
+              className="text-white hover:bg-blue-500 px-4 py-2 rounded-lg transition"
               to="/contact"
             >
               {translations[language].contact}
@@ -84,7 +84,7 @@ function MainLayout({ children }) {
             <div className="relative hidden lg:block">
               <button
                 onClick={() => setDropdownOpen(!isDropdownOpen)}
-                className="flex items-center bg-slate-500 text-white rounded px-4 py-1 border"
+                className="flex items-center bg-blue-400 text-white rounded px-4 py-1 border"
               >
                 <img
                   src={`/${languageMap[language].icon}.svg`}
