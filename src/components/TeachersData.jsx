@@ -6,7 +6,7 @@ const teachersData = {
       subject: "Maktab direktori",
       date: "20.09.1970",
       tel: "+998 99-616-44-56",
-      img: "path/to/image1.jpg",
+      img: "img.jpg",
       bio: "Farhod Jurayev 10 yildan ortiq tajribaga ega matematik o'qituvchi. U maktab boshqaruvida yuqori malakaga ega va o‘quvchilarning muvaffaqiyati uchun doimiy ishlaydi.",
     },
     {
@@ -24,7 +24,7 @@ const teachersData = {
       subject: "Ma'naviy-ma'rifiy ishlar bo'yicha direktor o'rinbosari",
       date: "25.04.1993",
       tel: "+998 99-368-07-33",
-      img: "path/to/image3.jpg",
+      img: "img.jpg",
       bio: "Shohruz Jalilov maktabda ma'naviyat va tarbiya ishlari bo'yicha mutaxassis. U yosh avlodga milliy qadriyatlarni singdirish va ijtimoiy loyihalarni rivojlantirish ustida ishlaydi.",
     },
     {
@@ -33,7 +33,7 @@ const teachersData = {
       subject: "Psixolog",
       date: "04.03.1963",
       tel: "+998 99-602-71-28",
-      img: "path/to/image4.jpg",
+      img: "img.jpg",
       bio: "Musobek Azimbekov – tajribali psixolog bo‘lib, o‘quvchilar va o‘qituvchilarning ruhiy salomatligini mustahkamlashda faol ishtirok etadi.",
     },
     {
@@ -69,7 +69,7 @@ const teachersData = {
       subject: "Matematika va Informatika o'qituvchisi",
       date: "07.01.1996",
       tel: "+998 99-307-01-96",
-      img: "path/to/image8.jpg",
+      img: "img.jpg",
       bio: "Parviz Bobosharipov matematika va informatika fanlarini mukammal o‘qituvchi bo‘lib, zamonaviy texnologiyalarni dars jarayoniga tatbiq etadi.",
     },
   ],
@@ -80,7 +80,7 @@ const teachersData = {
       subject: "Директор школы",
       date: "20.09.1970",
       tel: "+998 99-616-44-56",
-      img: "path/to/image1.jpg",
+      img: "img.jpg",
       bio: "Фарход Жураев — опытный учитель математики с более чем 10-летним стажем. Он обладает высокой квалификацией в управлении школой и постоянно работает над успехами учеников.",
     },
     {
@@ -98,7 +98,7 @@ const teachersData = {
       subject: "Заместитель директора по духовно-просветительской работе",
       date: "25.04.1993",
       tel: "+998 99-368-07-33",
-      img: "path/to/image3.jpg",
+      img: "img.jpg",
       bio: "Шохруз Джалилов — специалист по духовному воспитанию и просвещению. Работает над развитием социальных проектов и приобщением молодежи к национальным ценностям.",
     },
     {
@@ -107,7 +107,7 @@ const teachersData = {
       subject: "Психолог",
       date: "04.03.1963",
       tel: "+998 99-602-71-28",
-      img: "path/to/image4.jpg",
+      img: "img.jpg",
       bio: "Мусобек Азимбеков — опытный психолог, активно работает над укреплением психологического здоровья учеников и преподавателей.",
     },
     {
@@ -143,7 +143,7 @@ const teachersData = {
       subject: "Преподаватель математики и информатики",
       date: "07.01.1996",
       tel: "+998 99-307-01-96",
-      img: "path/to/image8.jpg",
+      img: "img.jpg",
       bio: "Парвиз Бобошарипов — квалифицированный преподаватель математики и информатики, применяет современные технологии в учебном процессе.",
     },
   ],
@@ -154,7 +154,7 @@ const teachersData = {
       subject: "School Principal",
       date: "20.09.1970",
       tel: "+998 99-616-44-56",
-      img: "path/to/image1.jpg",
+      img: "img.jpg",
       bio: "Farhod Jurayev is an experienced mathematics teacher with over 10 years of expertise. He is highly skilled in school management and works tirelessly for student success.",
     },
     {
@@ -172,7 +172,7 @@ const teachersData = {
       subject: "Deputy Principal for Moral and Educational Affairs",
       date: "25.04.1993",
       tel: "+998 99-368-07-33",
-      img: "path/to/image3.jpg",
+      img: "img.jpg",
       bio: "Shohruz Jalilov is a specialist in moral and spiritual education. He works on instilling national values in youth and developing social projects.",
     },
     {
@@ -181,7 +181,7 @@ const teachersData = {
       subject: "Psychologist",
       date: "04.03.1963",
       tel: "+998 99-602-71-28",
-      img: "path/to/image4.jpg",
+      img: "img.jpg",
       bio: "Musobek Azimbekov is an experienced psychologist actively involved in improving the mental well-being of students and staff.",
     },
     {
@@ -217,7 +217,7 @@ const teachersData = {
       subject: "Mathematics and Computer Science Teacher",
       date: "07.01.1996",
       tel: "+998 99-307-01-96",
-      img: "path/to/image8.jpg",
+      img: "img.jpg",
       bio: "Parviz Bobosharipov is a qualified teacher of mathematics and computer science, applying modern technologies in the classroom.",
     },
   ],
@@ -228,7 +228,7 @@ const teachersData = {
       subject: "Директори мактаб",
       date: "20.09.1970",
       tel: "+998 99-616-44-56",
-      img: "path/to/image1.jpg",
+      img: "img.jpg",
       bio: "Фарход Жураев – мутахассис дар соҳаи риёзиёт бо таҷрибаи 10-солаи зиёда. Вай дар идоракунии мактаб дорои малакаи баланд аст ва барои муваффақияти шогирдон кор мекунад.",
     },
     {
@@ -246,7 +246,7 @@ const teachersData = {
       subject: "Муовини директор оид ба корҳои маънавӣ-тарбиявӣ",
       date: "25.04.1993",
       tel: "+998 99-368-07-33",
-      img: "path/to/image3.jpg",
+      img: "img.jpg",
       bio: "Шоҳруз Жалилов – мутахассис дар соҳаи маънавию тарбиявӣ. Вай бо мақсади тарғиби арзишҳои миллӣ ва рушди лоиҳаҳои иҷтимоӣ кор мекунад.",
     },
     {
@@ -255,7 +255,7 @@ const teachersData = {
       subject: "Психолог",
       date: "04.03.1963",
       tel: "+998 99-602-71-28",
-      img: "path/to/image4.jpg",
+      img: "img.jpg",
       bio: "Мусобек Азимбеков – психологи бо таҷрибаи зиёде, ки дар таҳкими саломатии равонии шогирдон ва омӯзгорон фаъолона иштирок мекунад.",
     },
     {
@@ -291,7 +291,7 @@ const teachersData = {
       subject: "Мударриси риёзӣ ва информатика",
       date: "07.01.1996",
       tel: "+998 99-307-01-96",
-      img: "path/to/image8.jpg",
+      img: "img.jpg",
       bio: "Парвиз Бобошарипов – омӯзгори маъруфи риёзӣ ва информатика, ки дар раванди таълим аз технологияи муосир истифода мекунад.",
     },
   ],
