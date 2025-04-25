@@ -471,9 +471,11 @@ import {
   FaFacebook,
   FaTelegram,
   FaInstagram,
+  FaMap,
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { FaMapLocation } from "react-icons/fa6";
 
 function Home() {
   const theme = useSelector((state) => state.theme);
@@ -497,7 +499,6 @@ function Home() {
 
   return (
     <div className={`w-full min-h-screen ${bg} ${text}`}>
-      {/* Header */}
       <section className="w-full py-20 px-6 bg-gradient-to-r from-blue-700 to-indigo-800 text-white">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
@@ -509,7 +510,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Nega biz */}
       <section className={`w-full py-20 px-6 ${bg}`}>
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center  text-blue-700 mb-12">
@@ -563,7 +563,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Yutuqlar */}
       <section className={`w-full py-20 px-6 ${sectionBg}`}>
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-blue-700 mb-12">
@@ -596,8 +595,6 @@ function Home() {
           </div>
         </div>
       </section>
-
-      {/* Fan yo‘nalishlari */}
       <section className={`w-full py-20 px-6 ${bg}`}>
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-blue-700 mb-12">
@@ -624,7 +621,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Galereya */}
       <section className={`w-full py-20 px-6 ${sectionBg}`}>
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-blue-700 mb-12">
@@ -653,11 +649,11 @@ function Home() {
             {[
               {
                 quote: "Bu maktab hayotimdagi eng muhim bosqich bo‘ldi.",
-                name: "Dilshod, Talaba",
+                name: "Saidbek, Talaba",
               },
               {
                 quote: "Ustozlarim tufayli IT sohasiga kirib bordim.",
-                name: "Laylo, Dasturchi",
+                name: "Shohjahon, Dasturchi",
               },
             ].map((item, idx) => (
               <div key={idx} className={`${box} p-6 rounded-xl shadow`}>
@@ -670,7 +666,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className={`w-full py-10 px-6 ${footerBg} ${text}`}>
         <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
           <div>
@@ -707,11 +702,14 @@ function Home() {
               <a href="#">
                 <FaFacebook />
               </a>
-              <a href="#">
+              <a href="https://t.me/+KYv5MRxu45QzYTI6">
                 <FaTelegram />
               </a>
               <a href="#">
                 <FaInstagram />
+              </a>
+              <a href="https://maps.app.goo.gl/3xvJJGBfKLJ2zw4U9">
+                <FaMapLocation />
               </a>
             </div>
             <button
@@ -723,7 +721,7 @@ function Home() {
           </div>
         </div>
         <div className="mt-8 text-center text-sm opacity-70">
-          © 2025 1-IDUM Maktabi. Barcha huquqlar himoyalangan.
+          © 2025 1-IDU Maktabi. Barcha huquqlar himoyalangan.
         </div>
       </footer>
     </div>

@@ -3,7 +3,7 @@ import MainLayout from "./layouts/MainLayout";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
-// import TeacherDetails from "./pages/TeacherDetails";
+import TeacherDetails from "./pages/TeachersDetails";
 
 function App() {
   return (
@@ -34,14 +34,14 @@ function App() {
           }
         />
 
-        {/* <Route
+        <Route
           path="/teachers/:id"
           element={
             <MainLayout>
               <TeacherDetails />
             </MainLayout>
           }
-        /> */}
+        />
       </Routes>
     </div>
   );
