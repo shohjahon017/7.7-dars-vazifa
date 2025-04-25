@@ -665,63 +665,94 @@ function Home() {
           </div>
         </div>
       </section>
-
-      <footer className={`w-full py-10 px-6 ${footerBg} ${text}`}>
-        <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Kontakt</h3>
-            <p>
-              Manzil: Fargʻona viloyati, Soʻx tumani, Chumoqcha ko‘chasi 10-uy
-            </p>
-            <p>Tel: +998 90 123 45 67</p>
-            <p>Email: info@1idum.uz</p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Havolalar</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="/" className="hover:text-blue-400">
-                  Bosh sahifa
+      <footer className={`w-full ${footerBg} ${text}`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center md:text-left">
+            {/* Kontakt */}
+            <div className="space-y-3">
+              <h3 className="text-xl font-semibold">📍 Kontakt</h3>
+              <p className="text-sm">
+                Manzil: Fargʻona viloyati, Soʻx tumani, Chumoqcha ko‘chasi 10-uy
+              </p>
+              <p className="text-sm">
+                Tel:{" "}
+                <a href="tel:+998901234567" className="hover:underline">
+                  +998 90 123 45 67
                 </a>
-              </li>
-              <li>
-                <a href="/about" className="hover:text-blue-400">
-                  Biz haqimizda
+              </p>
+              <p className="text-sm">
+                Email:{" "}
+                <a href="mailto:info@1idum.uz" className="hover:underline">
+                  info@1idum.uz
                 </a>
-              </li>
-              <li>
-                <a href="/contact" className="hover:text-blue-400">
-                  Aloqa
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Ijtimoiy Tarmoqlar</h3>
-            <div className="flex space-x-4 text-2xl text-blue-500 mb-4">
-              <a href="#">
-                <FaFacebook />
-              </a>
-              <a href="https://t.me/+KYv5MRxu45QzYTI6">
-                <FaTelegram />
-              </a>
-              <a href="#">
-                <FaInstagram />
-              </a>
-              <a href="https://maps.app.goo.gl/3xvJJGBfKLJ2zw4U9">
-                <FaMapLocation />
-              </a>
+              </p>
             </div>
+
+            {/* Havolalar */}
+            <div className="space-y-3">
+              <h3 className="text-xl font-semibold">🔗 Havolalar</h3>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <a href="/" className="hover:text-blue-500 transition">
+                    Bosh sahifa
+                  </a>
+                </li>
+                <li>
+                  <a href="/about" className="hover:text-blue-500 transition">
+                    Biz haqimizda
+                  </a>
+                </li>
+                <li>
+                  <a href="/contact" className="hover:text-blue-500 transition">
+                    Aloqa
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Ijtimoiy tarmoqlar */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold">🌐 Ijtimoiy tarmoqlar</h3>
+              <div className="flex justify-center md:justify-start gap-5 text-2xl text-blue-600">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  className="hover:scale-110 transition"
+                >
+                  <FaFacebook />
+                </a>
+                <a
+                  href="https://t.me/+KYv5MRxu45QzYTI6"
+                  target="_blank"
+                  className="hover:scale-110 transition"
+                >
+                  <FaTelegram />
+                </a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  className="hover:scale-110 transition"
+                >
+                  <FaInstagram />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* 'Biz bilan bog‘laning' tugmasi */}
+          <div className="mt-8 text-center">
             <button
               onClick={handleNavigate}
-              className="bg-white text-blue-800 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition"
+              className="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
             >
               Biz bilan bog‘laning
             </button>
           </div>
-        </div>
-        <div className="mt-8 text-center text-sm opacity-70">
-          © 2025 1-IDU Maktabi. Barcha huquqlar himoyalangan.
+
+          <div className="border-t mt-10 pt-6 text-center text-sm text-gray-500">
+            &copy; {new Date().getFullYear()} 1-IDUM. Barcha huquqlar
+            himoyalangan.
+          </div>
         </div>
       </footer>
     </div>
