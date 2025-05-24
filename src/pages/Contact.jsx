@@ -655,8 +655,7 @@ function Contact() {
       title: "Biz bilan bog‘laning",
       description:
         "Agar sizda savollar, takliflar yoki murojaatlar bo‘lsa, quyidagi forma orqali bizga xabar yuborishingiz mumkin:",
-      address:
-        "Manzil: Fargʻona viloyati, Soʻx tumani, Chumoqcha ko‘chasi 10-uy",
+      address: "Manzil: Fargʻona viloyati, Soʻx tumani, So`x ko‘chasi 59-uy",
       phone: "Telefon: +998 (71) 123-45-67",
       email: "Email: info@1-idum.uz",
       hours: "Ish vaqti: Dushanba - Shanba: 08:00 - 17:00",
@@ -676,8 +675,7 @@ function Contact() {
       title: "Свяжитесь с нами",
       description:
         "Если у вас есть вопросы или предложения, отправьте нам сообщение через форму ниже:",
-      address:
-        "Адрес: Ферганская область, Сохский район, улица Чумокча, дом 10",
+      address: "Адрес: Ферганская область, Сохский район, улица Сох, дом 59",
       phone: "Телефон: +998 (71) 123-45-67",
       email: "Эл. почта: info@1-idum.uz",
       hours: "Время работы: Пн - Сб: 08:00 - 17:00",
@@ -697,8 +695,7 @@ function Contact() {
       title: "Contact Us",
       description:
         "If you have questions or suggestions, you can send us a message using the form below:",
-      address:
-        "Address: Fergana region, Sokh district, Chumokcha street, house 10",
+      address: "Address: Fergana region, Sokh district, Sokh street, house 59",
       phone: "Phone: +998 (71) 123-45-67",
       email: "Email: info@1-idum.uz",
       hours: "Working hours: Monday - Saturday: 08:00 - 17:00",
@@ -718,7 +715,7 @@ function Contact() {
       title: "Бо мо тамос гиред",
       description:
         "Агар шумо савол ё пешниҳод дошта бошед, метавонед ба мо паём фиристед тавассути шакли зерин:",
-      address: "Суроға: Вилояти Фарғона, ноҳияи Сӯх, кӯчаи Чумоқча, хонаи 10",
+      address: "Суроға: Вилояти Фарғона, ноҳияи Сӯх, кӯчаи Сӯх, хонаи 59",
       phone: "Телефон: +998 (71) 123-45-67",
       email: "Email: info@1-idum.uz",
       hours: "Соатҳои корӣ: Душанбе - Шанбе: 08:00 - 17:00",

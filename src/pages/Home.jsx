@@ -663,17 +663,30 @@ function Home() {
               </div>
             ))}
           </div>
+          <div className="w-full h-96 py-10">
+            <iframe
+              className="w-full h-full rounded-lg"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2449.123456789!2d70.123456!3d40.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b1234567890abc%3A0xabcdef1234567890!2sSo‘x%20tumani%2C%20Farg‘ona%20viloyati!5e0!3m2!1suz!2s!4v1689097895648!5m2!1suz!2s"
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="So‘x tumani xaritasi"
+            ></iframe>
+          </div>
         </div>
       </section>
       <footer className={`w-full ${footerBg} ${text}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 text-center md:text-left">
-            {/* Kontakt */}
             <div className="space-y-3">
               <h3 className="text-xl font-semibold">📍 Kontakt</h3>
-              <p className="text-sm">
-                Manzil: Fargʻona viloyati, Soʻx tumani, Chumoqcha ko‘chasi 10-uy
-              </p>
+              <a
+                href="https://maps.app.goo.gl/U1XfsfFEyPN1Sdnb9"
+                className="text-sm hover:underline"
+              >
+                Manzil: Fargʻona viloyati, Soʻx tumani, Chumoqcha MFY, So`x
+                ko‘chasi 59-uy
+              </a>
               <p className="text-sm">
                 Tel:{" "}
                 <a href="tel:+998901234567" className="hover:underline">
@@ -688,7 +701,6 @@ function Home() {
               </p>
             </div>
 
-            {/* Havolalar */}
             <div className="space-y-3">
               <h3 className="text-xl font-semibold">🔗 Havolalar</h3>
               <ul className="space-y-2 text-sm">
@@ -709,8 +721,6 @@ function Home() {
                 </li>
               </ul>
             </div>
-
-            {/* Ijtimoiy tarmoqlar */}
             <div className="space-y-4">
               <h3 className="text-xl font-semibold">🌐 Ijtimoiy tarmoqlar</h3>
               <div className="flex justify-center md:justify-start gap-5 text-2xl text-blue-600">
@@ -739,7 +749,6 @@ function Home() {
             </div>
           </div>
 
-          {/* 'Biz bilan bog‘laning' tugmasi */}
           <div className="mt-8 text-center">
             <button
               onClick={handleNavigate}
