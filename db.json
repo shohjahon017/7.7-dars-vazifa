@@ -64,6 +64,14 @@
         "date": "07.01.1996",
         "tel": "+998 99-307-01-96",
         "bio": "Parviz Bobosharipov matematika va informatika fanlarini mukammal o‘qituvchi bo‘lib, zamonaviy texnologiyalarni dars jarayoniga tatbiq etadi."
+      },
+      {
+        "id": 9,
+        "name": "Abdullayev Shavkatjon",
+        "subject": "Ona tili va adabiyoti o'qituvchisi ",
+        "date": "07.01.1996",
+        "tel": "+998 99-307-01-96",
+        "bio": "Abdullayev Shavkatjon ona tili va adabiyotini  chuqur o‘rgatishga bag‘ishlangan ko‘p yillik tajribaga ega, zamonaviy metodlarni dars jarayoniga tatbiq etadi."
       }
     ]
   },
@@ -116,6 +124,14 @@
         "name": "Парвиз Бобошарипов",
         "subject": "Преподаватель математики и информатики",
         "bio": "Парвиз Бобошарипов — квалифицированный преподаватель математики и информатики, применяет современные технологии в учебном процессе."
+      },
+      {
+        "id": 9,
+        "name": "Abdullayev Shavkatjon",
+        "subject": "Ona tili va adabiyoti o'qituvchisi ",
+        "date": "07.01.1996",
+        "tel": "+998 99-307-01-96",
+        "bio": "Abdullayev Shavkatjon ona tili va adabiyotini  chuqur o‘rgatishga bag‘ishlangan ko‘p yillik tajribaga ega, zamonaviy metodlarni dars jarayoniga tatbiq etadi."
       }
     ]
   },
@@ -168,6 +184,12 @@
         "name": "Bobosharipov Parviz",
         "subject": "Math and Computer Science Teacher",
         "bio": "Parviz Bobosharipov is a qualified teacher of mathematics and computer science who integrates modern technologies into his lessons."
+      },
+      {
+        "id": 9,
+        "name": "Abdullayev Shavkatjon",
+        "subject": "Teacher of native language and literature ",
+        "bio": "Abdullayev Shavkatjon has many years of experience in in-depth teaching of native language and literature, and applies modern methods to the teaching process."
       }
     ]
   },
