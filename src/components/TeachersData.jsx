@@ -24,7 +24,7 @@ const teachersData = {
       subject: "Ma'naviy-ma'rifiy ishlar bo'yicha direktor o'rinbosari",
       date: "25.04.1993",
       tel: "+998 99-368-07-33",
-      img: "img.jpg",
+      img: "/jalilov.jpg",
       bio: "Shohruz Jalilov maktabda ma'naviyat va tarbiya ishlari bo'yicha mutaxassis. U yosh avlodga milliy qadriyatlarni singdirish va ijtimoiy loyihalarni rivojlantirish ustida ishlaydi.",
     },
     {
@@ -107,7 +107,7 @@ const teachersData = {
       subject: "Заместитель директора по духовно-просветительской работе",
       date: "25.04.1993",
       tel: "+998 99-368-07-33",
-      img: "img.jpg",
+      img: "/jalilov.jpg",
       bio: "Шохруз Джалилов — специалист по духовному воспитанию и просвещению. Работает над развитием социальных проектов и приобщением молодежи к национальным ценностям.",
     },
     {
@@ -190,7 +190,7 @@ const teachersData = {
       subject: "Deputy Principal for Moral and Educational Affairs",
       date: "25.04.1993",
       tel: "+998 99-368-07-33",
-      img: "img.jpg",
+      img: "/jalilov.jpg",
       bio: "Shohruz Jalilov is a specialist in moral and spiritual education. He works on instilling national values in youth and developing social projects.",
     },
     {
@@ -273,7 +273,7 @@ const teachersData = {
       subject: "Муовини директор оид ба корҳои маънавӣ-тарбиявӣ",
       date: "25.04.1993",
       tel: "+998 99-368-07-33",
-      img: "img.jpg",
+      img: "/jalilov.jpg",
       bio: "Шоҳруз Жалилов – мутахассис дар соҳаи маънавию тарбиявӣ. Вай бо мақсади тарғиби арзишҳои миллӣ ва рушди лоиҳаҳои иҷтимоӣ кор мекунад.",
     },
     {

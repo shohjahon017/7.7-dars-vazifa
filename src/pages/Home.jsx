@@ -626,17 +626,38 @@ function Home() {
           <h2 className="text-4xl font-bold text-center text-blue-700 mb-12">
             Maktab Hayotidan Lavhalar
           </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
-              <div key={i} className="rounded-xl overflow-hidden shadow-lg">
-                <img
-                  src={`https://source.unsplash.com/400x300/?school,education,student&sig=${i}`}
-                  alt={`gallery-${i}`}
-                  className="w-full h-60 object-cover"
-                />
-              </div>
-            ))}
-          </div>
+          <div className="flex flex-wrap justify-center">
+            <img
+              src="/mak.jpg"
+              alt="School photo"
+              className="rounded-md w-80 m-2"
+            />
+            <img
+              src="/mak2.jpg"
+              alt="School photo"
+              className="rounded-md w-80 m-2"
+            />
+            <img
+              src="/mak3.jpg"
+              alt="School photo"
+              className="rounded-md w-80 m-2"
+            />
+            <img
+              src="/mak4.jpg"
+              alt="School photo"
+              className="rounded-md w-80 m-2"
+            />
+            <img
+              src="/mak5.jpg"
+              alt="School photo"
+              className="rounded-md w-80 m-2"
+            />
+            <img
+              src="/mak6.jpg"
+              alt="School photo"
+              className="rounded-md w-80 m-2"
+            />
+          </div>{" "}
         </div>
       </section>
 
