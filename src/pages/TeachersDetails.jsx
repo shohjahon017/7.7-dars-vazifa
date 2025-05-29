@@ -131,7 +131,10 @@ function TeacherDetails() {
             theme === "dark" ? "text-red-400" : "text-red-600"
           } font-semibold`}
         >
-          O‘qituvchi topilmadi
+          {language === "uz" && "O‘qituvchi topilmadi"}
+          {language === "ru" && "Преподаватель не найден"}
+          {language === "en" && "Teacher not found"}
+          {language === "tj" && "Муаллим ёфт нашуд"}
         </h2>
       </div>
     );
@@ -173,11 +176,22 @@ function TeacherDetails() {
             </p>
             <div className="space-y-2 text-gray-600 text-sm md:text-base">
               <p>
-                <span className="font-semibold">📅 Tug‘ilgan sana:</span>{" "}
+                <span className="font-semibold">
+                  📅 {language === "uz" && "Tug‘ilgan sana:"}
+                  {language === "ru" && "Дата рождения:"}
+                  {language === "en" && "Date of birth:"}
+                  {language === "tj" && "Санаи таваллуд:"}
+                </span>{" "}
                 {teacher.date}
               </p>
               <p>
-                <span className="font-semibold">📞 Telefon:</span> {teacher.tel}
+                <span className="font-semibold">
+                  📞 {language === "uz" && "Telefon:"}
+                  {language === "ru" && "Телефон:"}
+                  {language === "en" && "Phone:"}
+                  {language === "tj" && "Телефон:"}
+                </span>{" "}
+                {teacher.tel}
               </p>
             </div>
           </div>
@@ -189,7 +203,10 @@ function TeacherDetails() {
               theme === "dark" ? "text-blue-400" : "text-blue-700"
             }`}
           >
-            📝 Biografiya
+            📝 {language == "uz" && "  Biografiya"}
+            {language == "ru" && " Биография"}
+            {language == "en" && " Biography"}
+            {language == "tj" && "Тарҷумаи ҳол"}
           </h2>
           <p
             className={`leading-relaxed text-justify ${

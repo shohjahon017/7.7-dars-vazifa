@@ -792,9 +792,9 @@ function Contact() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-20">
       <h1 className="text-4xl font-bold text-blue-900 mb-6">{t.title}</h1>
-      <p className="text-lg text-black mb-4">{t.description}</p>
+      <p className="text-lg text-gray-500  mb-4">{t.description}</p>
 
-      <div className="space-y-4 text-gray-700 mb-10">
+      <div className="space-y-4 text-gray-300 mb-10">
         <div>
           <a
             href="https://maps.app.goo.gl/3xvJJGBfKLJ2zw4U9"

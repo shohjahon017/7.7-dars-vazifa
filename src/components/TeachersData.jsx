@@ -152,7 +152,7 @@ const teachersData = {
       subject: "Преподаватель математики и информатики",
       date: "07.01.1996",
       tel: "+998 99-307-01-96",
-      img: "parviz.jpg",
+      img: "/parviz.jpg",
       bio: "Парвиз Бобошарипов — квалифицированный преподаватель математики и информатики, применяет современные технологии в учебном процессе.",
     },
     {
@@ -235,7 +235,7 @@ const teachersData = {
       subject: "Mathematics and Computer Science Teacher",
       date: "07.01.1996",
       tel: "+998 99-307-01-96",
-      img: "parviz.jpg",
+      img: "/parviz.jpg",
       bio: "Parviz Bobosharipov is a qualified teacher of mathematics and computer science, applying modern technologies in the classroom.",
     },
     {
@@ -318,7 +318,7 @@ const teachersData = {
       subject: "Мударриси риёзӣ ва информатика",
       date: "07.01.1996",
       tel: "+998 99-307-01-96",
-      img: "parviz.jpg",
+      img: "/parviz.jpg",
       bio: "Парвиз Бобошарипов – омӯзгори маъруфи риёзӣ ва информатика, ки дар раванди таълим аз технологияи муосир истифода мекунад.",
     },
     {
