@@ -596,10 +596,10 @@ function Home() {
           <h2 className="text-4xl font-bold text-center  text-blue-700 mb-12">
             {t.why}
           </h2>
-          <div className="grid md:grid-cols-3 gap-10">
+          <div className="grid md:grid-cols-3 gap-10" onClick={handleAbout}>
             {[
               {
-                icon: <FaSchool onClick={handleAbout} />,
+                icon: <FaSchool />,
                 title: {
                   uz: "Zamonaviy Ta’lim",
                   ru: "Современное образование",
