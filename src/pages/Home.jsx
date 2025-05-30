@@ -471,7 +471,7 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import { connect, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 function Home() {
   const language = useSelector((state) => state.language);
